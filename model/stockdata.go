@@ -2,6 +2,7 @@ package model
 
 type StockSearch struct {
 	MESSAGE string      `json:"message"`
+	page    int         `json:"page"`
 	Data    []StockData `json:"data"`
 }
 
