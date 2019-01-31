@@ -102,7 +102,7 @@ func fetchStockData(httpcl *http.Client) ([]byte, error) {
 		log.Fatal("NewRequest: ", err)
 		return nil, err
 	}
-	fmt.Println("URL" + url)
+	
 	resp, err := httpcl.Do(req)
 	if err != nil {
 		log.Fatal("Do: ", err)
