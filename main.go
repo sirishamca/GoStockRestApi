@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"getStockData"
 	"github.com/gorilla/mux"
 	"github.com/sirishamca/stockrestapi/config"
 	"github.com/sirishamca/stockrestapi/getStockData"
