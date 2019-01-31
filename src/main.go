@@ -24,7 +24,6 @@ func returnStockData(w http.ResponseWriter, r *http.Request) {
 	if len(queryParam) < 1 {
 		//setting to default Stock Exchange
 		queryParam = "AMEX"
-		fmt.Printf("%s", queryParam)
 	}
 	data, err := getStockData.GetStockData(key, queryParam)
 	if err != nil {
