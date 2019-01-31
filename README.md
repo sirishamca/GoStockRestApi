@@ -21,11 +21,9 @@ After this command if you see in command line warning : github.com\sirishamca\st
 Go to folder: cd $GOPATH/src/github.com/sirishamca/stockrestapi
 
 Build code:
-
 go build -tags dev
 
 Run code:
-
 go run -tags dev main.go
 
 
