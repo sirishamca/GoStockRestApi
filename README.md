@@ -21,19 +21,24 @@ After this command if you see in command line warning : github.com\sirishamca\st
 Go to folder: cd $GOPATH/src/github.com/sirishamca/stockrestapi
 
 Build code:
+
 go build -tags dev
 
 Run code:
+
 go run -tags dev main.go
 
 
 In case of production deployment
+
 Please update config file under config folder with proper APIToken and log file path. 
 
 Build code:
+
 go build -tags prod
 
 Run code:
+
 go run -tags prod main.go
 
 without updating APIToken if we run will get error in form API:
@@ -49,4 +54,5 @@ http://localhost:10000/stock/{symbol”}
 
 Example: 
 http://localhost:10000/stock/AAPL?stock_exchange=NASDAQ
+
 http://localhost:10000/stock/AAP
