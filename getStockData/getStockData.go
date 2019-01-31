@@ -56,11 +56,13 @@ func GetStockData(symbol string, stockExchange string, logger srslogger.Logger) 
 	//Validate Symbol, if Data present then onlly call other API to fetch data.
 	if len(record.Data) > 0 && record.Data[0].Symbol == Symbol {
 		return fetchStockData(client, logger)
-	} else {
+	} else if page != 0{
 		if defaultFlag {
 			return nil, errors.New("Message:No data found for the stock symbol:\"" + Symbol + "\" with default stock exchange \"" + StockExchange + "\".")
 		}
 		return nil, errors.New("Message:No data found for the stock symbol:\"" + Symbol + "\" with stock exchange(s) \"" + StockExchange + "\".")
+	} {
+		return nil, errors.New(record.MESSAGE)
 	}
 }
 
