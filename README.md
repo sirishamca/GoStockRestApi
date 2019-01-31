@@ -5,7 +5,9 @@ Used APIs from www.worldtradingdata.com to get stock data.
 Downloading the Go Dependencies
 
 To download the Go dependencies for this project, execute the following from the command line:
+
 go get github.com/gorilla/mux
+
 The mux package is a more feature rich option to the already existing net/http package for Go. It will be used for managing endpoints.
 
 Install and Run
