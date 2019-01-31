@@ -11,9 +11,12 @@ go get github.com/gorilla/mux
 The mux package is a more feature rich option to the already existing net/http package for Go. It will be used for managing endpoints.
 
 Install and Run
+
 go get github.com/sirishamca/stockrestapi
+
 After this command if you see in command line warning : github.com\sirishamca\stockrestapi\main.go:6:2: build constraints exclude all Go files
-Please ignore.
+          
+ Please ignore.
 
 Go to folder: cd $GOPATH/src/github.com/sirishamca/stockrestapi
 
